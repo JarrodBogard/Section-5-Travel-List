@@ -5,6 +5,7 @@ export default function Form({ onAddItems }) {
   const [quantity, setQuantity] = useState(1);
 
   function handleSubmit(e) {
+    console.log(e);
     e.preventDefault();
 
     if (!description) return;
